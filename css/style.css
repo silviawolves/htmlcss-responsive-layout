@@ -247,13 +247,10 @@ p {
     padding-bottom: 25px;
 }
 
-.card.white {
+.white {
     text-align: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-}
-
-.white {
     background-color: white;
 }
 
@@ -269,8 +266,71 @@ p {
     font-size: .8rem;
     text-align: center;
 }
+/* END SECTION II */
 
+/* SECTION III */
+.testimonial-header {
+    text-align: center;
+}
 
+.testimonial-header h5 {
+    font-weight: 100;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.testimonial-header h1 {
+    color: var(--color-primary);
+    padding-bottom: 25px;
+}
+
+.testimonial-header .subtitle {
+    font-size: .9rem;
+    padding-bottom: 30px;
+}
+
+.violet {
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.img-wrap {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.img-wrap img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text-wrap {
+    padding: 1rem 3rem;
+}
+
+.quote {
+    font-size: .9rem;
+    padding-bottom: 25px;
+    line-height: 25px;
+}
+
+.text-wrap h5 {
+    letter-spacing: 1px;
+    font-size: .9rem;
+}
+
+.fa-solid.fa-quote-left, .fa-solid.fa-quote-right {
+    font-size: 1.2rem;
+}
+/* END SECTION III */
 
 /* query large screen */
 @media screen and (max-width: 992px) {
