@@ -34,6 +34,7 @@ p {
 
 .bg-primary {
     background-color: var(--color-primary);
+    padding: .5rem;
 }
 
 .bg-secondary {
@@ -48,8 +49,10 @@ p {
     width: 900px;
     margin: 0 auto;
     padding: 1rem;
-    /*DEBUG*/
-    border: 1px dashed rgb(133, 66, 66);
+}
+
+.section {
+    padding: 2rem 0;
 }
 
 .padding-large {
@@ -71,11 +74,12 @@ p {
     padding-bottom: 2rem;
 }
 
-.card-2 {
-    /*DEBUG*/
-    background-color: tomato;
-    min-height: 100px;
-    border-radius: 20px;
+.padding-bottom-even-more {
+    padding-bottom: 2.5rem;
+}
+
+.padding-bottom-jumbo {
+    padding-bottom: 4rem;
 }
 
 .btn {
@@ -91,8 +95,6 @@ p {
 }
 
 .card {
-    border: 1px dashed black;
-    min-height: 100px;
     border-radius: 20px;
     padding: 1.5rem 1.3rem;
     overflow: hidden;
@@ -138,10 +140,6 @@ p {
 /* NAVBAR END */
 
 /* MAIN */
-.section {
-    padding: 2rem 0;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -215,6 +213,7 @@ p {
 .planning-woman-image {
     width: 300px;
     padding-bottom: 100px;
+    padding-top: 20px;
 }
 
 .planning-man-image {
@@ -237,6 +236,7 @@ p {
 .strategic-planning {
     color: white;
     font-size: .7rem;
+    padding-bottom: 0;
 }
 
 .strategic-title {
@@ -498,13 +498,38 @@ p {
 .copyright {
     padding-top: 20px;
     font-size: .7rem;
-}
-
-.copyright a {
     color: white;
+    line-height: 15px;
+    text-align: center;
 }
 
+.link-white {
+    color: white;
+    line-height: 15px;
+}
 /* END VI SECTION */
+
+/* FOOTER */
+.footer-col {
+    flex-basis: calc(100% / 3);
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.minor-padding {
+    padding: 1rem;
+}
+
+.major-padding {
+    padding-top: 3rem;
+}
+
+.link-violet {
+    color: var(--color-primary);
+}
+/* END FOOTER */
 
 /* query large screen */
 @media screen and (max-width: 992px) {
