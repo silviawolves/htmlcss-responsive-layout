@@ -3,3 +3,108 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --color-primary: #9792E4;
+    --color-secondary: #B5DDFF;
+    --color-secondary-dark: #0184FD;
+    --color-tertiary: #333333;
+}
+
+header {
+    background-color: var(--color-secondary-dark);
+}
+
+header nav {
+    box-shadow: 0px 0px 1px 0px #000;
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg-tertiary {
+    background-color: var(--color-tertiary);
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    padding: 2rem;
+    /*DEBUG*/
+    border: 1px dashed rgb(133, 66, 66);
+}
+
+.padding-large {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.col-1 {
+    flex-basis: calc((100% / 3) - 10px);
+}
+
+.col-2 {
+    flex-basis: calc((100% / 3 ) * 2);
+}
+
+.col-3 {
+    flex-basis: 100%;
+}
+
+.card {
+    background-color: teal;
+    min-height: 100px;
+    border-radius: 20px;
+}
+
+.card-2 {
+    /*DEBUG*/
+    background-color: tomato;
+    min-height: 100px;
+    border-radius: 20px;
+}
+
+/* query large screen */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 748px;
+    }
+}
+
+/* query medium screen */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 534px;
+    }
+}
+
+/* query small screen */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+}
