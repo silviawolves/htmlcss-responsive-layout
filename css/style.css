@@ -20,6 +20,10 @@ main {
     padding-top: 50px;
 }
 
+p {
+    line-height: 20px;
+}
+
 :root {
     --color-primary: #9792E4;
     --color-secondary: #B5DDFF;
@@ -40,7 +44,7 @@ main {
 }
 
 .container {
-    width: 980px;
+    width: 900px;
     margin: 0 auto;
     padding: 1rem;
     /*DEBUG*/
@@ -48,8 +52,8 @@ main {
 }
 
 .padding-large {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
 }
 
 .padding-medium {
@@ -60,6 +64,37 @@ main {
 .padding-small {
     padding-top: .5rem;
     padding-bottom: .5rem;
+}
+
+.padding-bottom-plus {
+    padding-bottom: 2rem;
+}
+
+.card-2 {
+    /*DEBUG*/
+    background-color: tomato;
+    min-height: 100px;
+    border-radius: 20px;
+}
+
+.btn {
+    border: none;
+    border-radius: 20px;
+    padding: .5rem 2rem;
+    color: white;
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px dashed black;
+    min-height: 100px;
+    border-radius: 20px;
+    padding: 1.5rem 1.3rem;
+    overflow: hidden;
 }
 /* ROOT ELEMENTS */
 
@@ -107,7 +142,8 @@ main {
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .justify-center {
@@ -120,29 +156,121 @@ main {
 }
 
 .col-1 {
-    flex-basis: calc((100% / 3) - 10px);
+    flex-basis: calc((100% / 3) - 20px);
 }
 
 .col-2 {
-    flex-basis: calc((100% / 3 ) * 2);
+    flex-basis: calc((100% / 3 * 2) - 10px);
 }
 
 .col-3 {
     flex-basis: 100%;
 }
-
-.card {
-    background-color: teal;
-    min-height: 100px;
-    border-radius: 20px;
+/* SECTION I */
+.blue {
+    background-color: var(--color-secondary);
+    font-size: .75rem;
+    height: 250px;
+    color: #5a6e7f;
 }
 
-.card-2 {
-    /*DEBUG*/
-    background-color: tomato;
-    min-height: 100px;
-    border-radius: 20px;
+.centered-text {
+    text-align: center;
 }
+
+.card .summary {
+    font-size: 60px;
+    color: var(--color-secondary-dark);
+    padding-bottom: 1.2rem;
+}
+
+.card h3 {
+    font-size: 1rem;
+    padding-bottom: 1.2rem;
+}
+
+.blue-title {
+    color: var(--color-secondary-dark);
+}
+
+.dark-blue {
+    background-color: var(--color-secondary-dark);
+}
+
+.fa-brands.fa-apple {
+    font-size: 15px;
+    color: white;
+    padding-right: 5px;
+}
+
+.iphone {
+    width: 180px;margin-top: 26px;
+    margin-left: 50px;
+}
+/* END SECTION I */
+
+/* SECTION II */
+.planning-woman-image {
+    width: 300px;
+    padding-bottom: 100px;
+}
+
+.planning-man-image {
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+.gap-reset {
+    gap: 0px;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.grow-plus {
+    flex-grow: 1.2;
+}
+
+.strategic-planning {
+    color: white;
+    font-size: .7rem;
+}
+
+.strategic-title {
+    font-size: 1.4rem;
+    padding-bottom: 2.5rem;
+}
+
+.strategic-text {
+    font-size: .8rem;
+    padding-bottom: 25px;
+}
+
+.card.white {
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.white {
+    background-color: white;
+}
+
+.circle-btn {
+    background-color: var(--color-primary);
+    border-radius: 100%;
+    border: none;
+    padding: 0.7rem 0.95rem;
+}
+
+.circle-btn i {
+    color: black;
+    font-size: .8rem;
+    text-align: center;
+}
+
+
 
 /* query large screen */
 @media screen and (max-width: 992px) {
