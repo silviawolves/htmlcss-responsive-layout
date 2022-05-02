@@ -6,7 +6,7 @@
 
 body {
     font-size: 16px;
-    font-family: 'PT Sans', sans-serif;;
+    font-family: 'PT Sans', sans-serif;
 }
 
 header {
@@ -450,8 +450,61 @@ p {
 .linkedin i {
     margin-right: 5px;
 }
-
 /* END SECTION V */
+
+/* VI SECTION */
+.get-started-wrap {
+    text-align: center;
+    color: white;
+}
+
+.get-started-wrap h5 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: lightgrey;
+    padding-bottom: 10px;
+}
+
+.get-started-h1 {
+    font-size: 2.3rem;
+    padding-bottom: 20px;
+}
+
+.jumbo-title {
+    color: #fdc15f;
+    font-size: 4.5rem;
+    padding-bottom: 20px;
+}
+
+.get-started-text {
+    color: white;
+    font-size: .8rem;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+.get-started-btn {
+    font-family: 'PT Sans', sans-serif;
+    font-size: .9rem;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    color: var(--color-primary);
+    padding: 1.3rem 3.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.copyright {
+    padding-top: 20px;
+    font-size: .7rem;
+}
+
+.copyright a {
+    color: white;
+}
+
+/* END VI SECTION */
 
 /* query large screen */
 @media screen and (max-width: 992px) {
