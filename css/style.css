@@ -14,6 +14,7 @@ header {
     box-shadow: 0px 0px 1px 0px #000;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 main {
@@ -95,6 +96,7 @@ p {
     border-radius: 20px;
     padding: 1.5rem 1.3rem;
     overflow: hidden;
+    position: relative;
 }
 /* ROOT ELEMENTS */
 
@@ -145,6 +147,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
+    row-gap: 15px;
 }
 
 .justify-center {
@@ -237,7 +240,7 @@ p {
 }
 
 .strategic-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding-bottom: 2.5rem;
 }
 
@@ -299,7 +302,7 @@ p {
     text-transform: uppercase;
 }
 
-.testimonial-header h1 {
+.testimonial-header h2 {
     color: var(--color-primary);
     font-size: 2.2rem;
     padding-bottom: 25px;
@@ -362,13 +365,13 @@ p {
     color: white;
     text-align: center;
     padding-bottom: 40px;
+    font-size: 2.3rem;
 }
 
-.card-number {
+.violet-jumbo {
     color: var(--color-primary);
     font-size: 3.5rem;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .number-subtitle {
@@ -387,8 +390,68 @@ p {
 .violet-btn {
     background-color: var(--color-primary);
 }
-
 /* END SECTION IV */
+
+/* SECTION V */
+.less-padding {
+    padding-right: .5rem;
+}
+
+.about-us-text {
+    padding-top: 20px;
+    font-size: .9rem;
+    line-height: 30px;
+}
+
+.img-wrapper {
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+.img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.quote-icon .fa-solid.fa-quote-left {
+    color: var(--color-primary);
+    font-size: 4rem;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.text-wrapper-about-us {
+    padding: 1.5rem;
+}
+
+.about-us-subtitile {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    padding-bottom: 20px;
+}
+
+.linkedin {
+    background-color: var(--color-primary);
+    color: white;
+    font-size: .7rem;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    padding: .4rem .8rem;
+}
+
+.linkedin i {
+    margin-right: 5px;
+}
+
+/* END SECTION V */
 
 /* query large screen */
 @media screen and (max-width: 992px) {
