@@ -69,16 +69,12 @@ main {
     align-items: center;
 }
 
-.nav-col {
-    flex-basis: calc((100% / 2) -10px);
-}
-
 .nav-col img {
     height: 30px;
     vertical-align: middle;
 }
 
-.nav-col a {
+.menu a {
     font-size: .8rem;
     display: inline-block;
     padding: .8rem;
@@ -91,6 +87,15 @@ main {
     border-radius: 20px;
     padding: .5rem .8rem;
     font-size: .8rem;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu svg {
+    fill: white;
+    height: 20px;
 }
 /* NAVBAR END */
 
@@ -143,6 +148,15 @@ main {
 @media screen and (max-width: 992px) {
     .container {
         width: 748px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        float: right;
     }
 }
 
