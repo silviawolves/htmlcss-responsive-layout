@@ -194,6 +194,10 @@ p {
     padding-bottom: 1.2rem;
 }
 
+.text-wrapper {
+    width: 50%;
+}
+
 .blue-title {
     color: var(--color-secondary-dark);
     font-size: 1.1rem;
@@ -212,9 +216,9 @@ p {
 
 .iphone {
     max-height: 200px;
-    position: relative;
-    bottom: -40px;
-    left: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 40px;
 }
 /* END SECTION I */
 
@@ -564,6 +568,21 @@ p {
 
     .col-md-full {
         flex-basis: 100%;
+    }
+
+    .card-padding, .card.blue {
+        padding: 1rem;
+    }
+
+    .text-wrapper {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .iphone {
+        position: relative;
+        left: 20px;
+        bottom: -20px;
     }
 
     .col-md-half {
