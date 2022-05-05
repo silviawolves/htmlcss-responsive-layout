@@ -570,6 +570,10 @@ p {
         flex-basis: 100%;
     }
 
+    .col-md-half {
+        flex-basis: calc(50% - 10px);
+    }
+    
     .card-padding, .card.blue {
         padding: 1rem;
     }
@@ -585,13 +589,25 @@ p {
         bottom: -20px;
     }
 
-    .col-md-half {
-        flex-basis: calc(50% - 10px);
-    }
-
     .padding-md-default {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .card.strategic-planning {
+        padding: 0 0 1.5rem 0;
+    }
+
+    .text-wrap {
+        padding: 1rem 1rem;
+    }
+
+    .md-padding {
+        padding: 0;
+    }
+
+    .md-padding-1 {
+        padding: 0 4rem;
     }
 }
 
