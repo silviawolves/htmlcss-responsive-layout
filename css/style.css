@@ -620,4 +620,32 @@ p {
     .col-sm-full {
         flex-basis: 100%;
     }
+
+    .strategic-text-left {
+        padding-right: 0rem;
+    }
+
+    .card.violet {
+        flex-direction: column;
+    }
+
+    .text-wrapper-about-us {
+        padding: 1.5rem 0;
+    }
+
+    .img-wrapper.big-img {
+        margin: 0;
+    }
+
+    .quote-icon .fa-solid.fa-quote-left {
+        color: var(--color-primary);
+        font-size: 4rem;
+        position: absolute;
+        top: 0px;
+        right: 15px;
+    }
+
+    .sm-padding {
+        padding: 1rem 0;
+    }
 }
